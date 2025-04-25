@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { Container } from "@chakra-ui/react";
 import Header from "@/components/layout/header";
 import type { Metadata } from "next";
 import { Provider } from "./provider";
@@ -19,7 +20,7 @@ export default function RootLayout({
 			<body>
 				<Provider>
 					<Header />
-					<div>{children}</div>
+					<Container minH="2xl">{children}</Container>
 				</Provider>
 			</body>
 		</html>
